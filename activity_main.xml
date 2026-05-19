@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/ign_dark">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/ign_header"
+        android:padding="14dp"
+        android:elevation="6dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="6dp">
+
+            <ImageButton
+                android:id="@+id/back_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:src="@android:drawable/ic_menu_revert"
+                android:contentDescription="Back"
+                android:padding="8dp"
+                android:scaleType="centerInside"
+                android:tint="@color/ign_red" />
+
+            <TextView
+                android:id="@+id/heading_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="IGN Headlines"
+                android:textColor="@color/ign_red"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/result_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Loading articles..."
+            android:textColor="@color/ign_text_dim"
+            android:textSize="12sp"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/ign_divider"
+        android:dividerHeight="1dp"
+        android:scrollbarThumbVertical="@color/ign_red" />
+
+</LinearLayout>
