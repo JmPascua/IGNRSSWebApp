@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.IGNNews" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/ign_red</item>
+        <item name="colorPrimaryDark">@color/ign_header</item>
+        <item name="colorAccent">@color/ign_red_light</item>
+        <item name="android:windowBackground">@color/ign_dark</item>
+        <item name="android:listSelector">@color/ign_card</item>
+        <item name="android:textColorPrimary">@color/ign_text_light</item>
+    </style>
+</resources>
